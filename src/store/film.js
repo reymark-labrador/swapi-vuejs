@@ -1,6 +1,8 @@
 import { defineStore } from 'pinia'
 import axios from "axios"
 
+import { GetSearchKeyFromUrl } from '../utils'
+
 export const useFilmStore = defineStore("film",{
     state: () => ({
         films: [],
